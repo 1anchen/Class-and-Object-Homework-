@@ -22,8 +22,9 @@ attr_accessor(:team_name , :player_name, :coach_name, :team_point)
    end
 
    def team_win_or_lose(result)
-      return 3 if result.downcase == "win"
-      return 0 if result.downcase == "lose"
+      @team_point = 3 if result.downcase == "win"
+      @team_point = 0 if result.downcase == "lose"
+      return @team_point
 
    end
 

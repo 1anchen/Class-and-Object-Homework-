@@ -26,8 +26,8 @@ def student_talk()
     return "I want to Jump!!!"
 end
 
-def student_favourite_language()
-    return "I love Ruby"
+def student_favourite_language(language)
+    return "I love #{language}"
 end
 
 end
